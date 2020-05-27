@@ -7,7 +7,7 @@ public class ejemplo {
 	public static void main(String[] args) {
         // declaration and instantiation of objects/variables
     	System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");
-	
+	WebDriver driver = new ChromeDriver();
     	System.out.println("holo");
         String baseUrl = "http://demo.guru99.com/test/newtours/";
         String expectedTitle = "Welcome: Mercury Tours";
