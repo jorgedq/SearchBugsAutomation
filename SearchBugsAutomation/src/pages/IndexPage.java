@@ -14,7 +14,9 @@ public class IndexPage {
 	@FindBy(xpath = ".//*[@name='password']")
 	private WebElement password;
 	@FindBy(xpath = ".//*[@name='login']")
-	private WebElement sign_in;  
+	private WebElement sign_in;
+	@FindBy(linkText = "Flights")
+	private WebElement FlightsButtonLink;
 	
     public IndexPage(WebDriver driver){
     	this.driver = driver;
@@ -29,5 +31,9 @@ public class IndexPage {
     	password.sendKeys(pass);	
     	sign_in.click();
     	return new FlightFinder(driver);
-    }  
+    }
+    
+    public void LogInRedirectFlightsPage() {
+    	FlightsButtonLink.click();
+    }
 }
