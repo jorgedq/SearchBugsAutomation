@@ -1,7 +1,7 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -22,8 +22,8 @@ public class SB_44_Test {
 	
 	@BeforeTest
 	public void setup(){
-		System.setProperty("webdriver.gecko.driver", "C:\\Rylmar\\Eclipse_Proyectos\\Tarea_Automatizacion\\driver\\geckodriver.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");					
+		driver = new ChromeDriver();
 		driver.get(baseUrl);
 	}
 	
