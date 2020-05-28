@@ -37,7 +37,7 @@ public class OnDate {
 	 @BeforeTest
 	 public void setup() {
 		System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");					
-		driver = new ChromeDriver();					  									
+		driver = new ChromeDriver();
 		driver.get(baseUrl);
 		
 	}

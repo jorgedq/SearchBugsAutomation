@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12804" started-at="2020-05-26T21:50:12 BOT" finished-at="2020-05-26T21:50:25 BOT">
+  <suite name="Default suite" duration-ms="18217" started-at="2020-05-28T14:33:10 BOT" finished-at="2020-05-28T14:33:28 BOT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12804" started-at="2020-05-26T21:50:12 BOT" finished-at="2020-05-26T21:50:25 BOT">
-      <class name="tests.ReturningDate">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ReturningDate@65e2dbf3]" name="setup" is-config="true" duration-ms="6837" started-at="2020-05-26T21:50:12 BOT" finished-at="2020-05-26T21:50:19 BOT">
+    <test name="Default test" duration-ms="18217" started-at="2020-05-28T14:33:10 BOT" finished-at="2020-05-28T14:33:28 BOT">
+      <class name="tests.SB_9_Test">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SB_9_Test@4f970963]" name="setup" is-config="true" duration-ms="8612" started-at="2020-05-28T14:33:10 BOT" finished-at="2020-05-28T14:33:19 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyDateReturninginBookAFlight()[pri:0, instance:tests.ReturningDate@65e2dbf3]" name="VerifyDateReturninginBookAFlight" duration-ms="5826" started-at="2020-05-26T21:50:19 BOT" finished-at="2020-05-26T21:50:25 BOT">
+        <test-method status="PASS" signature="verifyFlightSearchEnteringInvalidDates()[pri:0, instance:tests.SB_9_Test@4f970963]" name="verifyFlightSearchEnteringInvalidDates" duration-ms="5763" started-at="2020-05-28T14:33:19 BOT" finished-at="2020-05-28T14:33:24 BOT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyDateReturninginBookAFlight -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:tests.ReturningDate@65e2dbf3]" name="quit" is-config="true" duration-ms="89" started-at="2020-05-26T21:50:25 BOT" finished-at="2020-05-26T21:50:25 BOT">
+        </test-method> <!-- verifyFlightSearchEnteringInvalidDates -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.SB_9_Test@4f970963]" name="quit" is-config="true" duration-ms="3752" started-at="2020-05-28T14:33:24 BOT" finished-at="2020-05-28T14:33:28 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- tests.ReturningDate -->
+      </class> <!-- tests.SB_9_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
