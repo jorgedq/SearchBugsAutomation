@@ -17,6 +17,8 @@ package pages;
 			private WebElement returnigDay;
 			@FindBy(xpath = ".//*[@name='findFlights']")
 			private WebElement contine;
+			@FindBy(xpath=".//img[@src='/images/masts/mast_flightfinder.gif']")
+			private WebElement banner;
 			@FindBy(xpath = ".//*[@name='fromPort']")
 			private WebElement deptFrom;
 			@FindBy(xpath = ".//*[@name='toPort']")
@@ -26,6 +28,7 @@ package pages;
 	        Select selectOnDay;
 	        Select selectReturnMounth;
 	        Select selectReturnDay;
+	        Select selectArrivingIn;
 	        Select departFromSelect;
 	        Select arrivingInSelect;
 		public FlightFinder(WebDriver driver) {
@@ -35,8 +38,12 @@ package pages;
 		    selectOnDay=new Select (onDay);
 		    selectReturnMounth=new Select (returningMonth);
 		    selectReturnDay=new Select (returnigDay);
+
+		    selectArrivingIn = new Select(arrivingIn);
+
 		    departFromSelect = new Select (deptFrom);
 		    arrivingInSelect = new Select(arrivingIn);
+
 		}
 
 	    public SelectFlight EnterOn(String onM,String onD ) {
@@ -50,7 +57,27 @@ package pages;
 	    	selectReturnDay.selectByVisibleText(returnD);
 	    	contine.click();
 	    	return new SelectFlight(driver);
-	    }  
+
+	    }
+	    public boolean isPageDisplayed() {
+			return banner.isDisplayed();
+		}
+		
+		public void selectArrivingIn(String selection) {
+			selectArrivingIn.selectByVisibleText(selection);
+		}
+		
+		public void initialDate(String month,String day) {
+			selectOnMont.selectByValue(month);
+			selectOnDay.selectByVisibleText(day);
+		}
+		public void returnSelects(String month, String day) {
+			selectReturnMounth.selectByValue(month);
+			selectReturnDay.selectByVisibleText(day);
+		}
+		public void continueButton() {
+			contine.click();
+		} 
 	    
 	    public String searchFlightSameDestiny(String origin, String destiny){
 	    	departFromSelect.selectByVisibleText(origin);

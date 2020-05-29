@@ -1,25 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18217" started-at="2020-05-28T14:33:10 BOT" finished-at="2020-05-28T14:33:28 BOT">
+
+  <suite name="Default suite" duration-ms="79981" started-at="2020-05-28T19:49:59 BOT" finished-at="2020-05-28T19:51:19 BOT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18217" started-at="2020-05-28T14:33:10 BOT" finished-at="2020-05-28T14:33:28 BOT">
-      <class name="tests.SB_9_Test">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SB_9_Test@4f970963]" name="setup" is-config="true" duration-ms="8612" started-at="2020-05-28T14:33:10 BOT" finished-at="2020-05-28T14:33:19 BOT">
+    <test name="Default test" duration-ms="79981" started-at="2020-05-28T19:49:59 BOT" finished-at="2020-05-28T19:51:19 BOT">
+      <class name="tests.OnDate">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.OnDate@98cf3b]" name="setup" is-config="true" duration-ms="9862" started-at="2020-05-28T19:50:09 BOT" finished-at="2020-05-28T19:50:19 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyFlightSearchEnteringInvalidDates()[pri:0, instance:tests.SB_9_Test@4f970963]" name="verifyFlightSearchEnteringInvalidDates" duration-ms="5763" started-at="2020-05-28T14:33:19 BOT" finished-at="2020-05-28T14:33:24 BOT">
+        <test-method status="PASS" signature="VerifyDateOninBookAFlight()[pri:0, instance:tests.OnDate@98cf3b]" name="VerifyDateOninBookAFlight" duration-ms="5322" started-at="2020-05-28T19:50:31 BOT" finished-at="2020-05-28T19:50:36 BOT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFlightSearchEnteringInvalidDates -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:tests.SB_9_Test@4f970963]" name="quit" is-config="true" duration-ms="3752" started-at="2020-05-28T14:33:24 BOT" finished-at="2020-05-28T14:33:28 BOT">
+        </test-method> <!-- VerifyDateOninBookAFlight -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.OnDate@98cf3b]" name="quit" is-config="true" duration-ms="66" started-at="2020-05-28T19:51:19 BOT" finished-at="2020-05-28T19:51:19 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- tests.SB_9_Test -->
+      </class> <!-- tests.OnDate -->
+      <class name="tests.TotalPriceTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.TotalPriceTest@10f7aa]" name="beforeTest" is-config="true" duration-ms="6241" started-at="2020-05-28T19:50:24 BOT" finished-at="2020-05-28T19:50:31 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.TotalPriceTest@10f7aa]" name="f" duration-ms="17630" started-at="2020-05-28T19:50:36 BOT" finished-at="2020-05-28T19:50:54 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.TotalPriceTest@10f7aa]" name="afterTest" is-config="true" duration-ms="88" started-at="2020-05-28T19:51:19 BOT" finished-at="2020-05-28T19:51:19 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.TotalPriceTest -->
+      <class name="tests.ReturningDate">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ReturningDate@3bcb1]" name="setup" is-config="true" duration-ms="5789" started-at="2020-05-28T19:50:19 BOT" finished-at="2020-05-28T19:50:24 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyDateReturninginBookAFlight()[pri:0, instance:tests.ReturningDate@3bcb1]" name="VerifyDateReturninginBookAFlight" duration-ms="5816" started-at="2020-05-28T19:50:54 BOT" finished-at="2020-05-28T19:50:59 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDateReturninginBookAFlight -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.ReturningDate@3bcb1]" name="quit" is-config="true" duration-ms="134" started-at="2020-05-28T19:51:19 BOT" finished-at="2020-05-28T19:51:19 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- tests.ReturningDate -->
+      <class name="tests.CodeConfirmationTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.CodeConfirmationTest@1b2e768]" name="beforeTest" is-config="true" duration-ms="9381" started-at="2020-05-28T19:49:59 BOT" finished-at="2020-05-28T19:50:09 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.CodeConfirmationTest@1b2e768]" name="f" duration-ms="19552" started-at="2020-05-28T19:50:59 BOT" finished-at="2020-05-28T19:51:19 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.CodeConfirmationTest@1b2e768]" name="afterTest" is-config="true" duration-ms="49" started-at="2020-05-28T19:51:19 BOT" finished-at="2020-05-28T19:51:19 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.CodeConfirmationTest -->
+
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

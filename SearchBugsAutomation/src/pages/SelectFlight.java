@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
   {
 	  @FindBy(xpath = ".//*[@name='reserveFlights']")
 	  private WebElement continuie;
+	  @FindBy(xpath = ".//img[@src='/images/masts/mast_selectflight.gif']")
+	  private WebElement banner;
+	  
 	  WebDriver driver;
 	 
      public SelectFlight( WebDriver driver){
@@ -16,7 +19,12 @@ import org.openqa.selenium.support.PageFactory;
      public BookAFlight fecha(){
     	 continuie.click();
     	 return new BookAFlight(driver);
-     }  
-     
+     }
+     public boolean isDisplayed() {
+  	   return banner.isDisplayed();
+     }
+     public void submit() {
+  	   continuie.click();
+     } 
   }
 
