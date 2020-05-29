@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-  </test> <!-- Test -->
+	<test name="verifyTheSearchWhitTheSameDestinationAndOrigin" >
+       <classes> 
+          <class name="tests.SB_44_test" />
+       </classes>
+   </test>
+   <test name="verifyFlightSearchEnteringInvalidDates" >
+       <classes> 
+          <class name="tests.SB_9_test" />
+       </classes>
+   </test>
 </suite> <!-- Suite -->
