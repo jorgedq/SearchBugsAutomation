@@ -1,25 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23880" started-at="2020-05-29T17:18:47 BOT" finished-at="2020-05-29T17:19:11 BOT">
+  <suite name="Default suite" duration-ms="157434" started-at="2020-05-29T23:19:16 BOT" finished-at="2020-05-29T23:21:54 BOT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23880" started-at="2020-05-29T17:18:47 BOT" finished-at="2020-05-29T17:19:11 BOT">
-      <class name="tests.RegisterFlightEmpty">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.RegisterFlightEmpty@65e2dbf3]" name="beforeTest" is-config="true" duration-ms="7124" started-at="2020-05-29T17:18:47 BOT" finished-at="2020-05-29T17:18:54 BOT">
+    <test name="Default test" duration-ms="157434" started-at="2020-05-29T23:19:16 BOT" finished-at="2020-05-29T23:21:54 BOT">
+      <class name="tests.Worxun_10_EmptyReservationCreditCardTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.Worxun_10_EmptyReservationCreditCardTest@5a1b69]" name="beforeTest" is-config="true" duration-ms="6008" started-at="2020-05-29T23:19:49 BOT" finished-at="2020-05-29T23:19:55 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:tests.RegisterFlightEmpty@65e2dbf3]" name="f" duration-ms="16499" started-at="2020-05-29T17:18:54 BOT" finished-at="2020-05-29T17:19:10 BOT">
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.Worxun_10_EmptyReservationCreditCardTest@5a1b69]" name="f" duration-ms="18193" started-at="2020-05-29T23:20:05 BOT" finished-at="2020-05-29T23:20:24 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.RegisterFlightEmpty@65e2dbf3]" name="afterTest" is-config="true" duration-ms="209" started-at="2020-05-29T17:19:10 BOT" finished-at="2020-05-29T17:19:11 BOT">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.Worxun_10_EmptyReservationCreditCardTest@5a1b69]" name="afterTest" is-config="true" duration-ms="63" started-at="2020-05-29T23:21:53 BOT" finished-at="2020-05-29T23:21:54 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- tests.RegisterFlightEmpty -->
+      </class> <!-- tests.Worxun_10_EmptyReservationCreditCardTest -->
+      <class name="tests.SB_55_CheckOnFateInBookAFlightDepartTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SB_55_CheckOnFateInBookAFlightDepartTest@1814d18]" name="setup" is-config="true" duration-ms="5997" started-at="2020-05-29T23:19:37 BOT" finished-at="2020-05-29T23:19:43 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyDateOninBookAFlight()[pri:0, instance:tests.SB_55_CheckOnFateInBookAFlightDepartTest@1814d18]" name="VerifyDateOninBookAFlight" duration-ms="5457" started-at="2020-05-29T23:20:00 BOT" finished-at="2020-05-29T23:20:05 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDateOninBookAFlight -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.SB_55_CheckOnFateInBookAFlightDepartTest@1814d18]" name="quit" is-config="true" duration-ms="73" started-at="2020-05-29T23:21:53 BOT" finished-at="2020-05-29T23:21:53 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- tests.SB_55_CheckOnFateInBookAFlightDepartTest -->
+      <class name="tests.SB_44_SameDestinyAndOriginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SB_44_SameDestinyAndOriginTest@1552920]" name="setup" is-config="true" duration-ms="4783" started-at="2020-05-29T23:19:26 BOT" finished-at="2020-05-29T23:19:31 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyTheSearchWhitTheSameDestinationAndOrigin()[pri:0, instance:tests.SB_44_SameDestinyAndOriginTest@1552920]" name="verifyTheSearchWhitTheSameDestinationAndOrigin" duration-ms="5805" started-at="2020-05-29T23:20:53 BOT" finished-at="2020-05-29T23:20:59 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheSearchWhitTheSameDestinationAndOrigin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.SB_44_SameDestinyAndOriginTest@1552920]" name="quit" is-config="true" duration-ms="107" started-at="2020-05-29T23:21:53 BOT" finished-at="2020-05-29T23:21:53 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- tests.SB_44_SameDestinyAndOriginTest -->
+      <class name="tests.SB_37_CodeConfirmationTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.SB_37_CodeConfirmationTest@158fe70]" name="beforeTest" is-config="true" duration-ms="5346" started-at="2020-05-29T23:19:16 BOT" finished-at="2020-05-29T23:19:22 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.SB_37_CodeConfirmationTest@158fe70]" name="f" duration-ms="27984" started-at="2020-05-29T23:20:59 BOT" finished-at="2020-05-29T23:21:27 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.SB_37_CodeConfirmationTest@158fe70]" name="afterTest" is-config="true" duration-ms="130" started-at="2020-05-29T23:21:53 BOT" finished-at="2020-05-29T23:21:53 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.SB_37_CodeConfirmationTest -->
+      <class name="tests.SB_9_SearchWithInvalidRangesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SB_9_SearchWithInvalidRangesTest@101eaf6]" name="setup" is-config="true" duration-ms="6256" started-at="2020-05-29T23:19:43 BOT" finished-at="2020-05-29T23:19:49 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyFlightSearchEnteringInvalidDates()[pri:0, instance:tests.SB_9_SearchWithInvalidRangesTest@101eaf6]" name="verifyFlightSearchEnteringInvalidDates" duration-ms="6714" started-at="2020-05-29T23:20:24 BOT" finished-at="2020-05-29T23:20:30 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlightSearchEnteringInvalidDates -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.SB_9_SearchWithInvalidRangesTest@101eaf6]" name="quit" is-config="true" duration-ms="123" started-at="2020-05-29T23:21:53 BOT" finished-at="2020-05-29T23:21:53 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- tests.SB_9_SearchWithInvalidRangesTest -->
+      <class name="tests.SB_50_CheckReturnDateInBookaflightReturnTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SB_50_CheckReturnDateInBookaflightReturnTest@136e637]" name="setup" is-config="true" duration-ms="5551" started-at="2020-05-29T23:19:31 BOT" finished-at="2020-05-29T23:19:37 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyDateReturninginBookAFlight()[pri:0, instance:tests.SB_50_CheckReturnDateInBookaflightReturnTest@136e637]" name="VerifyDateReturninginBookAFlight" duration-ms="6028" started-at="2020-05-29T23:21:27 BOT" finished-at="2020-05-29T23:21:33 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDateReturninginBookAFlight -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.SB_50_CheckReturnDateInBookaflightReturnTest@136e637]" name="quit" is-config="true" duration-ms="98" started-at="2020-05-29T23:21:53 BOT" finished-at="2020-05-29T23:21:53 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- tests.SB_50_CheckReturnDateInBookaflightReturnTest -->
+      <class name="tests.SB_40_TotalPriceTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.SB_40_TotalPriceTest@18486a3]" name="beforeTest" is-config="true" duration-ms="4635" started-at="2020-05-29T23:19:22 BOT" finished-at="2020-05-29T23:19:26 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.SB_40_TotalPriceTest@18486a3]" name="f" duration-ms="19766" started-at="2020-05-29T23:21:33 BOT" finished-at="2020-05-29T23:21:53 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.SB_40_TotalPriceTest@18486a3]" name="afterTest" is-config="true" duration-ms="74" started-at="2020-05-29T23:21:53 BOT" finished-at="2020-05-29T23:21:53 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.SB_40_TotalPriceTest -->
+      <class name="tests.Worxun_7_EmptyReservationFlightTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.Worxun_7_EmptyReservationFlightTest@7551fb]" name="beforeTest" is-config="true" duration-ms="5046" started-at="2020-05-29T23:19:55 BOT" finished-at="2020-05-29T23:20:00 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.Worxun_7_EmptyReservationFlightTest@7551fb]" name="f" duration-ms="22943" started-at="2020-05-29T23:20:30 BOT" finished-at="2020-05-29T23:20:53 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.Worxun_7_EmptyReservationFlightTest@7551fb]" name="afterTest" is-config="true" duration-ms="142" started-at="2020-05-29T23:21:54 BOT" finished-at="2020-05-29T23:21:54 BOT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.Worxun_7_EmptyReservationFlightTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
