@@ -1,4 +1,5 @@
 package tests;
+
 import org.testng.annotations.Test;
 
 import pages.BookAFlight;
@@ -13,15 +14,35 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 
-public class RegisterFlightEmptyCreditCard {
-
-@Test
-public void f() throws InterruptedException {
+public class SB_37_CodeConfirmationTest {
+  @BeforeTest
+  public void beforeTest() {
+	  
+	  System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");					
+	  
+	  driver = new ChromeDriver();					  									
+	  
+	  driver.get(baseUrl);
+	  
+  }
+  @Test
+  public void f() throws InterruptedException {
+	  
 	  boolean codeExists = false;
+		
+		onMonth="4";
+		
+		onDay="13";
+		
+		returningMonth="5";
+		
+		returningDay="13";
+		
+		arrivingIn="Paris";
 		
 		signInPage = new IndexPage(driver);		
 		
-		signInPage.EnterCredentials("harol123", "harol123");
+		signInPage.EnterCredentials("jorgedq", "12345");
 		
 		signInPage.LogInRedirectFlightsPage();
 		
@@ -30,6 +51,12 @@ public void f() throws InterruptedException {
 		flightFinder=new FlightFinder(driver);
 		
 		if(flightFinder.isPageDisplayed()) {
+		
+			flightFinder.initialDate(onMonth,onDay);
+			
+			flightFinder.selectArrivingIn(arrivingIn);
+			
+			flightFinder.returnSelects(returningMonth,returningDay);
 			
 			flightFinder.continueButton();
 			
@@ -46,8 +73,9 @@ public void f() throws InterruptedException {
 				bookAFlight = new BookAFlight(driver);
 				
 				if(bookAFlight.isDisplayed()) {
+				
+					bookAFlight.fillData("Jorge", "Delgadillo", "1234567");
 					
-					bookAFlight.fillData("harold", "Mejia","");
 					bookAFlight.securePurchase();
 					
 					Thread.sleep(3000);
@@ -69,36 +97,35 @@ public void f() throws InterruptedException {
 		    
 			AssertJUnit.assertEquals(codeExists, true);
 		}
-}
-@BeforeTest
-public void beforeTest() {
-	  
-	  System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");					
-	  
-	  driver = new ChromeDriver();					  									
-	  
-	  driver.get(baseUrl);
-	  
-}
-
-@AfterTest
-public void afterTest() {
+  }
+  @AfterTest
+  public void afterTest() {
 	  
 	  driver.close();
-
-}
-
-String baseUrl = "http://newtours.demoaut.com/mercurywelcome.php";
+  
+  }
+  
+  String baseUrl = "http://newtours.demoaut.com/mercurywelcome.php";
 	 
-public WebDriver driver;
+  public WebDriver driver;
 	 
-private IndexPage signInPage;
+  private IndexPage signInPage;
 	 
-private FlightConfirmationPage pageConfirmation;
-
-private FlightFinder flightFinder;
-
-private SelectFlight selectflight;
-
-private BookAFlight bookAFlight;
+  private FlightConfirmationPage pageConfirmation;
+  
+  private FlightFinder flightFinder;
+  
+  private SelectFlight selectflight;
+  
+  private BookAFlight bookAFlight;
+  
+  private String onMonth;
+  
+  private String onDay;
+  
+  private String returningMonth;
+  
+  private String returningDay;
+  
+  private String arrivingIn;
 }

@@ -14,7 +14,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 
-public class TotalPriceTest {
+public class SB_40_TotalPriceTest {
+  @BeforeTest
+  public void beforeTest() {
+	  
+	  System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");					
+	  
+	  driver = new ChromeDriver();					  									
+	  
+	  driver.get(baseUrl);
+		
+  }
   @Test
   public void f() throws InterruptedException {
 	  boolean codeExists = false;
@@ -92,20 +102,11 @@ public class TotalPriceTest {
 		}
 		
   }
-  @BeforeTest
-  public void beforeTest() {
-	  
-	  System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");					
-	  
-	  driver = new ChromeDriver();					  									
-	  
-	  driver.get(baseUrl);
-		
-  }
-
   @AfterTest
   public void afterTest() {
+	  
 	  driver.close();
+  
   }
   
   String baseUrl = "http://newtours.demoaut.com/mercurywelcome.php";
