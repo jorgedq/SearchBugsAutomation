@@ -12,46 +12,48 @@ import pages.IndexPage;
 
 //Verify the flight search by entering a range of invalid dates
 public class SB_9_SearchWithInvalidRangesTest {
-	
-	private String baseUrl = "http://newtours.demoaut.com";
-	
-	private WebDriver driver;
-	
-	private IndexPage welcome;
-	
-	private FlightFinder findFlight;
-	
-	private String actualTitle;
+
 	@BeforeTest
-	public void setup(){
-		
-		System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");					
-		
+	public void setup() {
+
+		System.setProperty("webdriver.chrome.driver", "./Drivers/Windows83/chromedriver.exe");
+
 		driver = new ChromeDriver();
-		
+
 		driver.get(baseUrl);
-	
+
 	}
+
 	@Test
-	public void verifyFlightSearchEnteringInvalidDates(){
-		
+	public void verifyFlightSearchEnteringInvalidDates() {
+
 		welcome = new IndexPage(driver);
-		
+
 		welcome.EnterCredentials("rfqt28", "123456");
-		
+
 		findFlight = new FlightFinder(driver);
-		
+
 		actualTitle = findFlight.searchFlight("London", "October", "23", "Acapulco", "June", "11");
-		
+
 		Assert.assertFalse(actualTitle.equals("Find a Flight: Mercury Tours: "));
-	
+
 	}
-	
+
 	@AfterTest
-	public void quit(){
-		
+	public void quit() {
+
 		driver.close();
-	
+
 	}
+
+	private String baseUrl = "http://newtours.demoaut.com";
+
+	private WebDriver driver;
+
+	private IndexPage welcome;
+
+	private FlightFinder findFlight;
+
+	private String actualTitle;
 
 }
