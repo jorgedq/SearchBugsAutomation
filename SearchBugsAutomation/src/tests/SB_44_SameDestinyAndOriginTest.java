@@ -35,7 +35,7 @@ public class SB_44_SameDestinyAndOriginTest {
 
 		actualTitle = findFlight.searchFlightSameDestiny("Frankfurt", "Frankfurt");
 
-		Assert.assertFalse(actualTitle.equals("Find a Flight: Mercury Tours: "));
+		Assert.assertTrue(actualTitle.equals("Find a Flight: Mercury Tours: "), "You can continue with the flight reservation");
 
 	}
 

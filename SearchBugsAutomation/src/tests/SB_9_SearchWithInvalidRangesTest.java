@@ -35,7 +35,7 @@ public class SB_9_SearchWithInvalidRangesTest {
 
 		actualTitle = findFlight.searchFlight("London", "October", "23", "Acapulco", "June", "11");
 
-		Assert.assertFalse(actualTitle.equals("Find a Flight: Mercury Tours: "));
+		Assert.assertTrue(actualTitle.equals("Find a Flight: Mercury Tours: "), "You can continue with the flight reservation");
 
 	}
 
