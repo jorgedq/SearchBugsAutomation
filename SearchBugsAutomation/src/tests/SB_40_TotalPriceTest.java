@@ -26,7 +26,7 @@ public class SB_40_TotalPriceTest {
 		
   }
   @Test
-  public void veerifyTotalPriceTest() throws InterruptedException {
+  public void verifyTotalPriceTest() throws InterruptedException {
 	  boolean codeExists = false;
 		
 		onMonth="4";
