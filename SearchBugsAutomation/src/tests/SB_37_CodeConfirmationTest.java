@@ -26,7 +26,7 @@ public class SB_37_CodeConfirmationTest {
 	  
   }
   @Test
-  public void f() throws InterruptedException {
+  public void verifyCodeConfirmationTest() throws InterruptedException {
 	  
 	  boolean codeExists = false;
 		
