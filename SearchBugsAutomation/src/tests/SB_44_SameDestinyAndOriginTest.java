@@ -12,49 +12,48 @@ import pages.IndexPage;
 
 /* Verify the search for flights whit the same destination and origin*/
 public class SB_44_SameDestinyAndOriginTest {
-	
-	private String baseUrl = "http://newtours.demoaut.com";
-	
-	private WebDriver driver;
-	
-	private IndexPage welcome;
-	
-	private FlightFinder findFlight;
-	
-	private String actualTitle;
-	
+
 	@BeforeTest
-	public void setup(){
-		
-		System.setProperty("webdriver.chrome.driver","./Drivers/Windows83/chromedriver.exe");					
-		
+	public void setup() {
+
+		System.setProperty("webdriver.chrome.driver", "./Drivers/Windows83/chromedriver.exe");
+
 		driver = new ChromeDriver();
-		
+
 		driver.get(baseUrl);
-	
+
 	}
-	
+
 	@Test
-	public void verifyTheSearchWhitTheSameDestinationAndOrigin(){
-		
+	public void verifyTheSearchWhitTheSameDestinationAndOrigin() {
+
 		welcome = new IndexPage(driver);
-		
+
 		welcome.EnterCredentials("rfqt28", "123456");
-		
+
 		findFlight = new FlightFinder(driver);
-		
+
 		actualTitle = findFlight.searchFlightSameDestiny("Frankfurt", "Frankfurt");
-		
-		Assert.assertFalse(actualTitle.equals("Find a Flight: Mercury Tours: "));
-	
+
+		Assert.assertTrue(actualTitle.equals("Find a Flight: Mercury Tours: "), "You can continue with the flight reservation");
+
 	}
-	
+
 	@AfterTest
-	public void quit(){
-	
+	public void quit() {
+
 		driver.close();
-	
+
 	}
-	
+
+	private String baseUrl = "http://newtours.demoaut.com";
+
+	private WebDriver driver;
+
+	private IndexPage welcome;
+
+	private FlightFinder findFlight;
+
+	private String actualTitle;
 
 }
