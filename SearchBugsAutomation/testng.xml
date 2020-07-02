@@ -7,10 +7,10 @@
       <class name="tests.SB_50_CheckReturnDateInBookaflightReturnTest"/>
       <class name="tests.SB_9_SearchWithInvalidRangesTest"/>
       <class name="tests.SB_37_CodeConfirmationTest"/>
-      <class name="tests.Worxun_10_EmptyReservationCreditCardTest"/>
+      <class name="tests.RegisterEmptyCreditCardBaDa"/>
       <class name="tests.SB_44_SameDestinyAndOriginTest"/>
       <class name="tests.SB_40_TotalPriceTest"/>
-      <class name="tests.Worxun_7_EmptyReservationFlightTest"/>
+      <class name="tests.RegisterFlightEmpty"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
