@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 
-public class Worxun_10_EmptyReservationCreditCardTest {
+public class RegisterEmptyCreditCardBaDa {
 	@BeforeTest
 	public void beforeTest() {
 		  
@@ -64,12 +64,8 @@ public class Worxun_10_EmptyReservationCreditCardTest {
 						pageConfirmation = new FlightConfirmationPage(driver);
 						
 						if(pageConfirmation.isDisplayed()) {
-						
-							if(pageConfirmation.codeDisplayed()) {
 							
 								codeExists = true;
-							
-							}
 						
 						}
 					
