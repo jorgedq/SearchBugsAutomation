@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 
-public class Worxun_7_EmptyReservationFlightTest {
+public class RegisterFlightEmpty {
 	@BeforeTest
 	public void beforeTest() {
 		  
@@ -64,11 +64,8 @@ public class Worxun_7_EmptyReservationFlightTest {
 						
 						if(pageConfirmation.isDisplayed()) {
 						
-							if(pageConfirmation.codeDisplayed()) {
 							
 								codeExists = true;
-							
-							}
 						
 						}
 					
