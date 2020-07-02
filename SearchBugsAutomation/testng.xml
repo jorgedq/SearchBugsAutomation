@@ -3,14 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="tests.RegisterFlightEmpty"/>
       <class name="tests.SB_55_CheckOnFateInBookAFlightDepartTest"/>
       <class name="tests.SB_50_CheckReturnDateInBookaflightReturnTest"/>
       <class name="tests.SB_9_SearchWithInvalidRangesTest"/>
+      <class name="tests.RegisterEmptyCreditCardBaDa"/>
       <class name="tests.SB_37_CodeConfirmationTest"/>
-      <class name="tests.Worxun_10_EmptyReservationCreditCardTest"/>
       <class name="tests.SB_44_SameDestinyAndOriginTest"/>
       <class name="tests.SB_40_TotalPriceTest"/>
-      <class name="tests.Worxun_7_EmptyReservationFlightTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
